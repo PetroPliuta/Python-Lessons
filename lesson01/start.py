@@ -1,48 +1,6 @@
 # #!/usr/bin/python3.8
 import random
 
-# #print("Hello world")
-
-# a = 10  # int
-# print(a, type(a))
-
-# a = 10.6  # float
-# print(a, type(a))
-
-# a = True  # bool
-# print(a, type(a))
-
-# a = "string"  # str
-# print(a, type(a))
-
-# name = input("Your name: ")
-# age = bool(input("Your age: "))
-# print(name, type(name))
-# print(age, type(age))
-
-# a = int(input("number1: "))
-# b = int(input("number2: "))
-# sum = a + b
-# min = a - b
-# mul = a * b
-# div = a / b
-
-# print(sum)
-# print(min)
-# print(mul)
-# print(div)
-
-# a = int(input("number1: "))
-# b = int(input("number2: "))
-# c = int(input("number3: "))
-
-# if a > b > c > a and a > c:
-#     print('a')
-# elif a>b or b>c :
-#     print('elif')
-# else:
-#     print('a=b')
-
 # 1
 # a = int(input('Enter km: '))
 # print(a, "km = ", a*1000, "m")
