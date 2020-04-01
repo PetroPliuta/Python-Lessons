@@ -85,7 +85,7 @@ import random
 #         exit = True
 
 # 6
-# -10 + 30
+# -10 .. + 30
 counter = 0
 for number in range(7):
     t = random.randrange(-10, 30)
