@@ -46,8 +46,8 @@ import random
 # -10 .. + 30
 counter = 0
 for number in range(7):
-    t = random.randrange(-10, 30)
+    t = random.randint(-10, 30)
     print("T: ", t)
     if t > 10:
         counter += 1
-print("Count = ", counter)
+print("Count =", counter)
