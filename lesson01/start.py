@@ -1,35 +1,85 @@
-import sys
-print("Hello world")
+# #!/usr/bin/python3.8
+import random
 
-# print(sys.version)
-# print(sys.version_info)
+# #print("Hello world")
 
+# a = 10  # int
+# print(a, type(a))
 
-class Class:
-    def class_meth(self, arg):
-        print(arg)
+# a = 10.6  # float
+# print(a, type(a))
 
+# a = True  # bool
+# print(a, type(a))
 
-# def a = new Class
+# a = "string"  # str
+# print(a, type(a))
 
-def f(x): return 2*x
+# name = input("Your name: ")
+# age = bool(input("Your age: "))
+# print(name, type(name))
+# print(age, type(age))
 
+# a = int(input("number1: "))
+# b = int(input("number2: "))
+# sum = a + b
+# min = a - b
+# mul = a * b
+# div = a / b
 
-print(f(123))
+# print(sum)
+# print(min)
+# print(mul)
+# print(div)
 
-complex_zero = [0.0, 0.0]
+# a = int(input("number1: "))
+# b = int(input("number2: "))
+# c = int(input("number3: "))
 
+# if a > b > c > a and a > c:
+#     print('a')
+# elif a>b or b>c :
+#     print('elif')
+# else:
+#     print('a=b')
 
-def complex(real=0.0, imag=0.0):
-    """Form a complex number.
+# 1
+# a = int(input('Enter km:'))
+# print(a, "km = ", a*1000, "m")
 
-    Keyword arguments:
-    real -- the real part (default 0.0)
-    imag -- the imaginary part (default 0.0)
+# # 2
+# USD = 25.5
+# EUR = 30.0
+# RUB = .3
 
-    """
-    if imag == 0.0 and real == 0.0:
-        return complex_zero
+# s = float(input("Enter sum (UAH): "))
+# print("EUR = ", s/EUR)
+# print("USD = ", s/USD)
+# print("RUB = ", s/RUB)
 
+# 3
 
-print(complex())
+# price = float(input("Enter price: "))
+# fuel_consumption = float(input("Enter fuel consumption: "))
+# length = float(input("Enter path length: "))
+
+# res = length/100 * fuel_consumption * price
+
+# print('Result = ', res)
+
+# 4
+# a = random.randrange(0, 2)
+# b = random.randrange(0, 2)
+# c = random.randrange(0, 2)
+# print(a,b,c)
+# if a == b and b == c:
+#     print('All equal')
+
+exit = False
+
+while not exit:
+    choice = int(input("1. Add\n2. Div\n0. Exit\n==>"))
+    if choice == 1:
+        print("a+b")
+    elif choice == 0:
+        exit = True
