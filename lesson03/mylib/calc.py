@@ -32,4 +32,3 @@ def div(*params):
             return 0
         result /= i
     return result
-# sum(1, 2)
