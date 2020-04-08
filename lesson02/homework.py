@@ -16,7 +16,7 @@ if r.status_code == req.codes.ok:
     result = r.json()
 sorted_ = sort_countries(result["Countries"])
 
-print("Top countries\n%-30s%15s" % ("Country", "TotalConfirmed"))
+print("Top countries\n%-33s%15s" % ("Country", "TotalConfirmed"))
 ukr_place: int
 for i in range(100):
     print('{:03d}{:.<30}{:.>15}'.format(
