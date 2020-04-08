@@ -9,4 +9,4 @@ print("Minus: ", minus(1, 3, 4))
 print("Mul: ", mul(1, 3, 4))
 print("Div: ", div(1, 3, 4))
 
-print("Div0: ", div(1, 1, 4, 0))
+print("Div0: ", div(1, 1, 0, 2))
