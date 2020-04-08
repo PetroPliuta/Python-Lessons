@@ -1,7 +1,7 @@
 # !/usr/bin/python3.8
 # print("Env")
 
-from lib.calc import summ, minus, mul, div
+from mylib.calc import summ, minus, mul, div
 # import lib
 
 print("Summ: ", summ(1, 3, 4))
