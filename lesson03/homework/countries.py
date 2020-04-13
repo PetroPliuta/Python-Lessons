@@ -49,5 +49,5 @@ def write_json_to_file(countries: dict, filename=os.path.join(os.path.dirname(os
         у форматі json
     """
     file = open(filename, 'w')
-    json.dump(countries, file, indent="    ")
+    json.dump(countries, file, indent=4)
     file.close()
