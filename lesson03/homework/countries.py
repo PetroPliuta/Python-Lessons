@@ -5,6 +5,7 @@
 import requests
 import json
 import os
+from operator import itemgetter
 
 
 def get_countries():
@@ -22,7 +23,7 @@ def sort_countries(countries: dict, sort_by='TotalConfirmed'):
     """Функція сортує отриманий dict
     по вказаному ключу sort_by
     """
-    return sorted(countries, key=lambda x: x[sort_by], reverse=True)
+    return sorted(countries, key=itemgetter(sort_by), reverse=True)
 
 
 def print_top_countries(countries: dict, top=50):
