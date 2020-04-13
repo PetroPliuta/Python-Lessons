@@ -48,6 +48,3 @@ person_list.append(sara)
 for item in person_list:
     item.age += 1
     item.person_info()
-
-# add money
-# rm money
