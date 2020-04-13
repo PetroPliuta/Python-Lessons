@@ -1,6 +1,7 @@
 .vscode
 .directory
 LINK
+LINK.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
