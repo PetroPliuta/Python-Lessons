@@ -17,7 +17,7 @@ class DiscountCard:
     def __init__(self, *, date="01/01/2020", amount=0):
         self.__card_number = random.randint(100000, 999999)
         self.__discount = 1
-        self.__amount = 0  # вартість накупленого товару
+        self.__amount = 0  # Приховане допоміжне поле для збереження вартості накупленого товару
 
         if self.__check_date(date):
             self.__date = date
