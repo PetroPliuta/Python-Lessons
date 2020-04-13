@@ -13,7 +13,6 @@ import random
 
 
 class DiscountCard:
-    # TODO: get date default value form function
     def __init__(self, *, date="01/01/2020", amount=0):
         self.__card_number = random.randint(100000, 999999)
         self.__discount = 1
