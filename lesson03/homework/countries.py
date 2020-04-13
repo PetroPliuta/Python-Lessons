@@ -6,6 +6,7 @@ import requests
 import json
 import os
 from operator import itemgetter
+import csv
 
 
 def get_countries():
@@ -52,3 +53,11 @@ def write_json_to_file(countries: dict, filename=os.path.join(os.path.dirname(os
     file = open(filename, 'w')
     json.dump(countries, file, indent=4)
     file.close()
+
+
+def write_csv_to_file(countries: dict, filename=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'result.csv')):
+    with open(filename, "w") as file:
+        columns = countries[0].keys()
+        writer = csv.DictWriter(file, fieldnames=columns)
+        writer.writeheader()
+        writer.writerows(countries)
