@@ -1,15 +1,15 @@
+"""Модуль працює з API - https://api.covid19api.com/summary
+отримує ключ ["Countries"]
+дозволяє сортувати отримане значення, виводити на екран, записувати в файл
+"""
 import requests
 import json
 import os
-""" Модуль працює з API - https://api.covid19api.com/summary
-    працює з ключем ["Countries"]
-    дозволяє сортувати отримане значення, виводити на екран, записувати в файл
-"""
 
 
 def get_countries():
-    """ Функція бере результат з API - https://api.covid19api.com/summary
-        вертає JSON ключ ["Countries"] отриманого об'єкта
+    """Функція бере результат з API - https://api.covid19api.com/summary
+    повертає JSON ключ ["Countries"] отриманого об'єкта
     """
     result = ""
     r = requests.get('https://api.covid19api.com/summary', timeout=10)
@@ -19,15 +19,15 @@ def get_countries():
 
 
 def sort_countries(countries: dict, sort_by='TotalConfirmed'):
-    """ Функція сортує отриманий dict
-        по вказаному ключу sort_by
+    """Функція сортує отриманий dict
+    по вказаному ключу sort_by
     """
     return sorted(countries, key=lambda x: x[sort_by], reverse=True)
 
 
 def print_top_countries(countries: dict, top=50):
-    """ Функція виводить ключі: ("Country", "TotalConfirmed") 
-        з перших top записів отриманого dict
+    """Функція виводить ключі: ("Country", "TotalConfirmed") 
+    з перших top записів отриманого dict
     """
     ukr_place: int
     print("Top countries\n%-33s%15s" % ("Country", "TotalConfirmed"))
@@ -45,8 +45,8 @@ def print_top_countries(countries: dict, top=50):
 
 
 def write_json_to_file(countries: dict, filename=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'result.txt')):
-    """ Функція записує отриманий dict в файл
-        у форматі json
+    """Функція записує отриманий dict в файл
+    у форматі json
     """
     file = open(filename, 'w')
     json.dump(countries, file, indent=4)
