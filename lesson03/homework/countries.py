@@ -56,7 +56,7 @@ def write_json_to_file(countries: dict, filename=os.path.join(os.path.dirname(os
 
 
 def write_csv_to_file(countries: dict, filename=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'result.csv')):
-    with open(filename, "w") as file:
+    with open(filename, "w", newline="") as file:
         columns = countries[0].keys()
         writer = csv.DictWriter(file, fieldnames=columns)
         writer.writeheader()
