@@ -37,7 +37,7 @@ def print_top_countries(countries: dict, top=50):
     except:
         pass
     else:
-        print("\nUkraine is on ", ukr_place, "th place", sep='')
+        print("\nUkraine is on ", ukr_place, " place", sep='')
 
 
 def write_json_to_file(countries: dict, filename=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'result.txt')):
