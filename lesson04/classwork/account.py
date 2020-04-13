@@ -35,7 +35,7 @@ class Account:
             return True
 
     def money_transfer(self, account_to, amount):
-        if self.__check_float(amount) and isinstance(account_to, Account):
+        if self.__check_float(amount) and isinstance(account_to, self.__class__):
             # print(type(account_to))
             self.withdraw_money(amount)
             account_to.add_money(amount)
