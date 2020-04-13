@@ -1,6 +1,10 @@
 import requests
 import json
 import os
+""" Модуль працює з API - https://api.covid19api.com/summary
+    працює з ключем ["Countries"]
+    дозволяє сортувати отримане значення, виводити на екран, записувати в файл
+"""
 
 
 def get_countries():
