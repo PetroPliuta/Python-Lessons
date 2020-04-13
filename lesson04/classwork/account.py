@@ -34,6 +34,11 @@ class Account:
         else:
             return True
 
+    def money_transfer(self, account_to, amount):
+        if self.__check_float(amount):
+            self.withdraw_money(amount)
+            account_to.add_money(amount)
+
 
 account1 = Account(10, currency="~~")
 print(account1)
@@ -43,3 +48,9 @@ print(account1)
 
 account1.withdraw_money(2.6)
 print(account1)
+
+account2 = Account(1000000)
+print(account2)
+account2.money_transfer(account1, 100)
+print(account1)
+print(account2)
