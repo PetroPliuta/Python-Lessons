@@ -1,18 +1,11 @@
-class Class():
-    a = 1
-    b = 2
+from lib.media_downloader import Downloader
 
-    def __init__(self):
-        # return 1
+while True:
+    media_file = Downloader()
+    choice = media_file.menu()
+    if choice == 1:
+        media_file.download_youtube_single_media()
+    elif choice == 2:
         pass
-
-    def __del__(self):
-        print(self.a)
-        return 1
-
-    def f(self):
-        pass
-
-
-c = Class()
-
+    elif choice == 0:
+        exit()
