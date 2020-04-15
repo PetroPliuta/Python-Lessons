@@ -1,5 +1,8 @@
 from lib.media_downloader import Downloader
 
+import subprocess
+subprocess.call("ls -l",shell=True)
+
 while True:
     media_file = Downloader()
     choice = media_file.menu()
