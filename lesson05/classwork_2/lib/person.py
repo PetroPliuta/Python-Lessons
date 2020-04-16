@@ -39,10 +39,10 @@ class Users:
         users = []
         with open('db.txt') as db_file:
             for line in db_file:
-                if len(line.strip()) > 0:  # ігнорим пусті строки
-                    item = line.strip()
-                    items = item.split("#")
-                    users.append(items)
+                if len(line.strip()) > 0:  # ігнорим пусті строки файла
+                    user = line.strip()
+                    user_properties = user.split("#")
+                    users.append(user_properties)
         return users
 
     def login(self):
